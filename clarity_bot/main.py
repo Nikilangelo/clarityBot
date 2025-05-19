@@ -11,5 +11,5 @@ if __name__ == '__main__':
     app = ApplicationBuilder().token(BOT_TOKEN).build()
     app.add_handler(CommandHandler("start", start_command))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_user_message))
-    print("Бот запущен.")
+    print("Bot started.")
     app.run_polling()
